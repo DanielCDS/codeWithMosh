@@ -6,6 +6,8 @@
  */
 package org.example;
 
+import com.code.with.mosh.classes.TextBox;
+
 public class Main {
 
     //~ ----------------------------------------------------------------------------------------------------------------
@@ -14,5 +16,13 @@ public class Main {
 
     public static void main(String[] args) {
         System.out.println("Hello world!");
+
+        var textBox1 = new TextBox();
+        textBox1.setText("Box 1 Daniel");
+        System.out.println(textBox1.getText().toLowerCase());
+
+        var textBox2 = new TextBox();
+        textBox2.setText("Box 2");
+        System.out.println(textBox2);
     }
 }
