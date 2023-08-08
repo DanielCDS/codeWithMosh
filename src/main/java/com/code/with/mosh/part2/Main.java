@@ -6,5 +6,26 @@
  */
 package com.code.with.mosh.part2;
 
+import com.code.with.mosh.part2.classes.TextBox;
+
+
 public class Main {
+
+    //~ ----------------------------------------------------------------------------------------------------------------
+    //~ Methods 
+    //~ ----------------------------------------------------------------------------------------------------------------
+
+    public static void main(String[] args) {
+        //static, nu se schimba tipul instantierii
+        var textBox1 = new TextBox();
+        // am folosit var, ca sa scurtam codul si sa il facem mai inteligibil
+        textBox1.setText("Box 1");
+        System.out.println(textBox1.getText().toUpperCase());
+
+        var textBox2 = textBox1;
+        textBox2.setText("Box 2");
+        System.out.println(textBox2.getText());
+        System.out.println(textBox1.getText()); //acum se referentiaza acelasi obiect
+
+    }
 }

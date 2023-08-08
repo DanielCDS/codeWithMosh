@@ -6,7 +6,8 @@
  */
 package org.example;
 
-import com.code.with.mosh.classes.TextBox;
+import com.code.with.mosh.part2.classes.TextBox;
+
 
 public class Main {
 

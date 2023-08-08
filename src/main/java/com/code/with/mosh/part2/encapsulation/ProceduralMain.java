@@ -4,7 +4,7 @@
  *  This software program is proprietary and confidential to Murex S.A.S and its affiliates ("Murex") and, without limiting the generality of the foregoing reservation of rights, shall not be accessed, used, reproduced or distributed without the
  *  express prior written consent of Murex and subject to the applicable Murex licensing terms. Any modification or removal of this copyright notice is expressly prohibited.
  */
-package com.code.with.mosh.part2;
+package com.code.with.mosh.part2.encapsulation;
 
 import com.code.with.mosh.part2.encapsulation.Employee;
 
@@ -24,6 +24,10 @@ public class ProceduralMain {
         employee.setHourlyRate(20);
         int wageC = employee.calculateWage(10);
         System.out.println(wageC);
+
+        int rate = employee.getHourlyRate();
+        System.out.println("Hourly rate is: " + rate);
+        System.out.println("Base salary is: " + employee.getBaseSalary());
 
         //facut procedural
         int baseSalary = 50_000;
