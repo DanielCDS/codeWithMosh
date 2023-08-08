@@ -27,7 +27,7 @@ public class MortgageCalculator_v1 {
         Double annualInterestRate = (annualInterestRateScanner.nextDouble() / 100) / 12; //lol
         System.out.print("Period (Years): ");
         Integer period = periodScanner.nextInt() * 12;
-//M = P [ i(1 + i)^n ] / [ (1 + i)^n – 1].
+        //M = P [ i(1 + i)^n ] / [ (1 + i)^n – 1].
         double power = Math.pow(1 + annualInterestRate, period);
         int mortgage = (int) ((principal * (annualInterestRate * power)) / (power - 1)); //meaning, until death [the monthly payments]
         System.out.println("Mortgage: $" + mortgage);
