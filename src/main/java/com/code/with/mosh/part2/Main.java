@@ -6,6 +6,7 @@
  */
 package com.code.with.mosh.part2;
 
+import com.code.with.mosh.part2.classes.Browser;
 import com.code.with.mosh.part2.classes.TextBox;
 
 
@@ -26,6 +27,13 @@ public class Main {
         textBox2.setText("Box 2");
         System.out.println(textBox2.getText());
         System.out.println(textBox1.getText()); //acum se referentiaza acelasi obiect
+
+        System.out.println("++++++++++++++++++++++++++++++");
+        System.out.println("Other stuff");
+        System.out.println("++++++++++++++++++++++++++++++");
+
+        var browser = new Browser();
+        browser.navigate("Test");
 
     }
 }
